@@ -107,6 +107,20 @@ h1{
     }
 }
 
+@media only screen and (max-width: 720px){
+    h1{
+        font-size: 3rem;
+    }
+    .join-button{
+        width: 180px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+}
+
 .join-button{
     width: 250px;
     height: 60px;
