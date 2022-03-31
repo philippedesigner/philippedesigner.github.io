@@ -94,16 +94,18 @@ h1{
     }
     nav{
         margin: 0px 10px;
-        height: 160px;
-        flex-direction: column;
+        height: auto;
+        flex-direction: row;
         justify-content: center;
         align-items:center;
         text-align:center;
     }
     ul{
         justify-self: center;
-        gap: 20px;
-        padding:0px
+        align-content: space-around;
+        flex-wrap: nowrap;
+        gap: 5px;
+        padding:0px;
     }
 }
 
