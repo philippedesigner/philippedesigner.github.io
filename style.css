@@ -1,10 +1,17 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
 html{
     font-family: 'Bitter', sans-Serif;
     font-size: 16px;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav{
-    margin: 0px 40px;
+    margin: 10px 40px;
     height: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +82,31 @@ nav li a{
 .description{
     font-size: 1.5rem;
     max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.section{
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 20px 40px;
+}
+
+.join-button{
+    width: 250px;
+    height: 60px;
+    background-color: rgb(232, 136, 115);
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 3px rgb(240, 200, 8);
+    transition: .15s ease-in;
 }
 
 h1{
@@ -93,7 +125,7 @@ h1{
         font-size: 5rem;
     }
     nav{
-        margin: 0px 10px;
+        margin: 10px;
         height: auto;
         flex-direction: row;
         justify-content: center;
@@ -107,36 +139,41 @@ h1{
         gap: 5px !important;
         padding:0px;
     }
+    .banner{
+        padding: 0px 10px;
+    }
+    .section{
+        text-align: center;
+        margin: 80px auto;
+        max-width: 1600px;
+        padding: 0px 20px;
+    }
 }
 
 @media only screen and (max-width: 720px){
     h1{
-        font-size: 3rem;
-    }
-    .join-button{
-        width: 180px;
-        height: 45px;
-        font-size: 1rem;
+        font-size: 4rem;
     }
     .description{
         font-size: 1rem;
     }
 }
 
-.join-button{
-    width: 250px;
-    height: 60px;
-    background-color: rgb(232, 136, 115);
-    border-radius: 20px;
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 3px rgb(240, 200, 8);
-    transition: .15s ease-in
+@media only screen and (max-width: 404px){
+    h1{
+        font-size: 3rem;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .join-button{
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 1.2rem;
+    }
+
 }
 
 ul a:hover{
@@ -161,14 +198,6 @@ ul a:hover{
     48% {top:-0.4em;}
     50% {top:0em;}
     100% {top:0em;}
-}
-
-.about-section{
-    text-align: center;
-    margin: 40px auto;
-    max-width: 1600px;
-    min-height: 100vh;
-    padding: 20px 40px;
 }
 
 h2{
@@ -213,10 +242,6 @@ h4{
     margin: 10px auto;
 }
 
-.person p{
-    min-height: 100px;
-}
-
 .sacha{
     flex-shrink: 1;
     flex-grow: 1;
@@ -259,14 +284,10 @@ h4{
     .philippe{
         display: none;
     }
-}
-
-.trainings-section{
-    text-align: center;
-    margin: 40px auto;
-    max-width: 1600px;
-    min-height: 100vh;
-    padding:20px 40px;
+    .about_description{
+        margin: 0px auto 20px auto;
+        line-height: 1.25rem;
+    }
 }
 
 .trainings-container{
@@ -344,17 +365,14 @@ h4{
     font-style: italic;
 }
 
+.training .join-button{
+    margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 920px){
     .trainings-container{
         flex-wrap: wrap;
     }
-}
-
-.contact-section{
-    text-align: center;
-    margin: 40px auto;
-    max-width: 1600px;
-    padding: 20px 40px;
 }
 
 .contact-container{
@@ -366,11 +384,15 @@ h4{
 }
 
 .maps{
-    width:500px;
+    width:40vw;
+}
+
+.maps p{
+    margin-bottom: 20px;
 }
 
 .gmaps{
-    width: 500px;
+    width: 100%;
     height: 400px;
     border: 4px solid rgb(240, 200, 8);
     border-radius: 50px;
@@ -416,10 +438,7 @@ h4{
         flex-wrap: wrap;
     }
     .maps{
-        width: 90vw;
-    }
-    .gmaps{
-        width: auto;
+        width: 80vw;
     }
 }
 
