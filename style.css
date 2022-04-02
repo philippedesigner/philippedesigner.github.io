@@ -6,8 +6,6 @@
 html{
     font-family: 'Bitter', sans-Serif;
     font-size: 16px;
-    margin: 0px;
-    padding: 0px;
 }
 
 nav{
@@ -203,6 +201,7 @@ ul a:hover{
 h2{
     font-size: 3rem;
     margin: 40px auto 20px auto;
+    text-align: center;
 }
 
 .about_description{
