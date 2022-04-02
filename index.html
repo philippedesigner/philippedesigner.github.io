@@ -23,10 +23,12 @@
     <SCRIPT language="JavaScript">
         var password; 
         var pass1="acro"; 
+        var pass2 = " acro"
         password=prompt('Enter Password',' '); 
-        if (password==pass1) 
-        alert('Correct Password! Click OK to Enter!'); 
-        else { window.location="http://acroyoga-luxembourg.com/"; 
+        if (password==pass1 || password ==pass2) {
+            alert('Correct Password! Click OK to Enter!'); 
+        }
+        else if (password != pass1) { window.location="http://acroyoga-luxembourg.com/"; 
         } 
     </SCRIPT>
 </head>
