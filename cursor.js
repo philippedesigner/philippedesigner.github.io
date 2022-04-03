@@ -13,6 +13,7 @@ function trackMouse(event){
     let newMouse = document.createElement('div');
     newMouse.style='=position: absolute; width: 60px; height: 60px; background-color: black; z-index:5; margin-left:' + mouseX - (dimension/2)+'px; margin-top:'+mouseY- (dimension/2)+'px;';
     document.getElementById('body').appendChild(newMouse);
+    console.log('');
 }
 
 function setInterval(){
