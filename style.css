@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding:0px;
+    cursor: none;
 }
 
 html{
@@ -464,6 +465,34 @@ footer{
               transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
       opacity: 1;
     }
+  }
+
+#canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#cursor {
+    pointer-events: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 1px #191919;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.35s ease width, 0.35s ease height, 0.35s ease border, 0.35s ease background;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#cursor.join-button {
+      width: 3rem;
+      height: 3rem;
+      border: solid 1px transparent;
+      background: rgba(#000, 0.2);
   }
   
   
