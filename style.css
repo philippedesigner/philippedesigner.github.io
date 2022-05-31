@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding:0px;
-    cursor: none;
 }
 
 html{
@@ -219,11 +218,12 @@ h2{
     display:flex;
     justify-content: center;
     align-items:flex-start;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .person{
-    width: 400px;
+    width: 350px;
     display:flex;
     flex-flow:column;
     align-items: center;
@@ -242,25 +242,9 @@ h4{
     margin: 10px auto;
 }
 
-.sacha{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-.lena{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-.philippe{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-.other{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
 
 .profilepic{
-    max-width: 75%;
+    height: 300px;
     border-radius: 100px;
     border: 5px solid rgb(240, 200, 8);
 }
@@ -281,9 +265,6 @@ h4{
         max-width: 300px;
         margin: 0px 10px;
     }
-    .philippe{
-        display: none;
-    }
     .about_description{
         margin: 0px auto 20px auto;
         line-height: 1.25rem;
@@ -293,7 +274,7 @@ h4{
 .trainings-container{
     display:flex;
     justify-content: center;
-    align-items:baseline;
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom:40px;
 }
@@ -308,14 +289,24 @@ h4{
     border-radius: 40px;
 }
 
+
 .upper{
-    text-align: left;
+    text-align: center;
     border-radius: 35px 35px 0px 0px;
     border-bottom: 1px solid black;
     height: 250px;
     max-width: 100%;
     padding: 20px;
     background-color: rgb(240, 240, 240);
+}
+
+.workshop .upper{
+    background-color: black;
+    color: white;
+}
+
+.training .subtitle{
+    width: 100%;
 }
 
 .upper h3{
@@ -369,9 +360,17 @@ h4{
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 920px){
-    .trainings-container{
-        flex-wrap: wrap;
+@media only screen and (max-width: 720px){
+    .training{
+        width: auto;
+        max-width: 100%;
+    }
+    .upper h3{
+        font-size: 3rem;
+        line-height: normal;
+    }
+    .price-tag{
+        font-size: 2.5rem;
     }
 }
 
