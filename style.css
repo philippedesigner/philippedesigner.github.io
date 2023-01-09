@@ -53,16 +53,25 @@ nav li a{
 .banner{
     padding: 0px 40px;
     height: 90vh;
-    background-image: url('images/background2.jpg');
+    background-image: url('images/group.JPG');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items:center;
     text-align:center;
     perspective: 500px;
+}
+
+.stage_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 60px;
 }
 
 .monkey{
@@ -81,6 +90,7 @@ nav li a{
     font-size: 1.5rem;
     max-width: 800px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .section{
@@ -109,9 +119,9 @@ nav li a{
 
 h1{
     font-family: 'Amatic SC', cursive;
-    font-size: 8rem;
+    font-size: 5rem;
     text-transform: uppercase;
-    color:black;
+    color:white;
     letter-spacing: 0.5rem;
     margin:20px 0px;
 	-webkit-animation: tilt-in-fwd-tr 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.3s both;
@@ -120,7 +130,7 @@ h1{
 
 @media only screen and (max-width: 920px){
     h1{
-        font-size: 5rem;
+        font-size: 3rem;
     }
     nav{
         margin: 10px;
@@ -377,6 +387,10 @@ h4{
     .price-tag{
         font-size: 2.5rem;
     }
+}
+
+#contact-form{
+    background-color: rgb(233, 244, 233);
 }
 
 .contact-container{
