@@ -18,7 +18,7 @@ html{
 
 nav{
     margin: 10px 40px;
-    height: 80px;
+  /*  height: 80px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,6 +50,11 @@ nav li a{
     border-radius: 10px;
 }
 
+.logo_acro{
+    display: flexbox;
+    width: 200px;
+}
+
 .logo a{
     font-family: 'Amatic SC', cursive;
     text-decoration: none;
@@ -61,7 +66,7 @@ nav li a{
 .banner{
     padding: 0px 40px;
     height: 90vh;
-    background-image: url('images/group.JPG');
+    background-image: url('images/commitee.JPG');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -305,7 +310,7 @@ h4{
     width: 400px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+ /*   justify-content: center;*/
     align-items: center;
     border: 5px solid black;
     border-radius: 40px;
@@ -313,10 +318,13 @@ h4{
 
 
 .upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     text-align: center;
     border-radius: 35px 35px 0px 0px;
     border-bottom: 1px solid black;
-    height: 250px;
+  /* height: 250px; */
     max-width: 100%;
     padding: 20px;
     background-color: rgb(240, 240, 240);
