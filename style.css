@@ -305,6 +305,12 @@ h4{
     gap: 30px;
     margin-bottom:40px;
 }
+.workshopfeb ul{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    line-height: 2rem;
+}
 .workshopfeb{
     width: 600px;
     display:flex;
@@ -314,12 +320,7 @@ h4{
     border: 5px solid black;
     border-radius: 40px;
 }
-.workshopfeb ul{
-    list-style: none;
-    text-align: left;
-    padding: 10px;
-    line-height: 2rem;
-}
+
 .training{
     width: 400px;
     display:flex;
