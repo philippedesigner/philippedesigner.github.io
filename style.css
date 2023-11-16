@@ -7,7 +7,13 @@ html{
     font-family: 'Bitter', sans-Serif;
     font-size: 16px;
 }
-
+.workshop a{
+    color:black;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 0px 15px;
+    text-decoration: none;
+}
 .training a{
     color:white;
     border: 1px solid white;
@@ -77,6 +83,7 @@ nav li a{
     text-align:center;
     perspective: 500px;
 }
+
 
 .stage_banner{
     display: flex;
@@ -311,7 +318,7 @@ h4{
     padding: 10px;
     line-height: 2rem;
 }
-.workshopfeb{
+.workshop{
     width: 600px;
     display:flex;
     flex-wrap: wrap;
@@ -350,7 +357,7 @@ h4{
     color: white;
 }
 
-.training .subtitle{
+.training .subtitle .workshop{
     width: 100%;
 }
 
@@ -391,7 +398,12 @@ h4{
     padding: 10px;
     line-height: 2rem;
 }
-
+.workshop ul{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    line-height: 2rem;
+}
 .bold{
     font-weight: 600;
 }
@@ -404,9 +416,12 @@ h4{
 .training .join-button{
     margin-bottom: 40px;
 }
+.workshop .join-button{
+    margin-bottom: 40px;
+}
 
 @media only screen and (max-width: 720px){
-    .training{
+    .training .workshop{
         width: auto;
         max-width: 100%;
     }
